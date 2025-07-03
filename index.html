@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>3D Solar System</title>
+    <style>
+        body { margin: 0; background: #000; color: white; font-family: sans-serif;}
+        #controls { 
+            position: fixed; 
+            top: 10px; 
+            left: 10px; 
+            background: rgba(0,0,0,0.5);
+            padding: 10px;
+            border-radius: 8px;
+            z-index: 10; 
+        }
+        #controls input { width: 100px; }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <label>Mercury: <input type="range" id="mercurySpeed" min="0" max="0.05" step="0.001" value="0.02"></label><br>
+        <label>Venus: <input type="range" id="venusSpeed" min="0" max="0.05" step="0.001" value="0.015"></label><br>
+        <label>Earth: <input type="range" id="earthSpeed" min="0" max="0.05" step="0.001" value="0.01"></label><br>
+        <label>Mars: <input type="range" id="marsSpeed" min="0" max="0.05" step="0.001" value="0.008"></label><br>
+        <label>Jupiter: <input type="range" id="jupiterSpeed" min="0" max="0.05" step="0.001" value="0.006"></label><br>
+        <label>Saturn: <input type="range" id="saturnSpeed" min="0" max="0.05" step="0.001" value="0.004"></label><br>
+        <label>Uranus: <input type="range" id="uranusSpeed" min="0" max="0.05" step="0.001" value="0.002"></label><br>
+        <label>Neptune: <input type="range" id="neptuneSpeed" min="0" max="0.05" step="0.001" value="0.001"></label><br>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.154.0/build/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
